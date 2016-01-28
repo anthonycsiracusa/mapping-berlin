@@ -1,12 +1,12 @@
 // code adapted from https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-image-slideshow/
 
 L.mapbox.accessToken =
-	'pk.eyJ1IjoidnVsaWJyYXJ5Z2lzIiwiYSI6ImFaN2JkSlUifQ.Dl2sTO1mGKK7MCd1ViGPnQ';
+	'pk.eyJ1IjoiYW50aG9ueWNzaXJhY3VzYSIsImEiOiJjaWdudWVocG4wMGJpbmtrb2ZkZDNpczF1In0.m3FSJwiHgwy1pfcsP2Orbw';
 
 // If you do not have a Mapbox key, refer to the readme.md
 var map = L.mapbox.map('map').setView([52.51, 13.38], 12);
 
-var layer_id = "vulibrarygis.of23e6p0";
+var layer_id = "anthonycsiracusa.o3ee92h8";
 var layer = L.mapbox.tileLayer(layer_id);
 layer.addTo(map);
 
