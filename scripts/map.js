@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoiYW50aG9ueWNzaXJhY3VzYSIsImEiOiJjaWdudWVocG4wMGJpbmtrb2ZkZDNpczF1In0.m3FSJwiHgwy1pfcsP2Orbw';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map').setView([52.51, 13.38], 12);
+var map = L.mapbox.map('map').setView([35.1306, -90.1696], 10);
 
 var layer_id = "anthonycsiracusa.o3ee92h8";
 var layer = L.mapbox.tileLayer(layer_id);
