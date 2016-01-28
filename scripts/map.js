@@ -11,7 +11,7 @@ var layer = L.mapbox.tileLayer(layer_id);
 layer.addTo(map);
 
 // Add custom popup html to each marker
-map.markerLayer.on('layeradd', function(e) {
+layer.on('ready', function(e) {
 	var marker = e.layer;
 	var feature = marker.feature;
 	var images = feature.properties.images;
