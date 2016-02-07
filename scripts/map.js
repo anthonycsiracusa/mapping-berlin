@@ -1,8 +1,5 @@
 <html>
 <head>
-  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-<meta charset=utf-8 />
 <title>Lynchings in Shelby County</title>
 
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
