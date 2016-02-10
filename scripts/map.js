@@ -6,7 +6,7 @@ L.mapbox.accessToken =
 // If you do not have a Mapbox key, refer to the readme.md
 var map = L.mapbox.map('map').setView([35.1306, -90.1696], 10);
 
-var layer_id = "anthonycsiracusa.o3ee92h8";
+var layer_id = "anthonycsiracusa.p31dhnah";
 var layer = L.mapbox.tileLayer(layer_id);
 layer.addTo(map);
 
