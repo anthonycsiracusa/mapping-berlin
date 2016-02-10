@@ -22,7 +22,7 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYW50aG9ueWNzaXJhY3VzYSIsImEiOiJjaWdudWVocG4wMGJpbmtrb2ZkZDNpczF1In0.m3FSJwiHgwy1pfcsP2Orbw';
-	var map = L.mapbox.map('map', 'anthonycsiracusa.p31dhnah').setView([35.14, -89.98], 10);
+	var map = L.mapbox.map('map', 'anthonycsiracusa.p31dhnah').setView([35.14, -89.98], 14);
 
 var myLayer = L.mapbox.featureLayer().addTo(map);
 
