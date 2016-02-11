@@ -75,7 +75,7 @@ myLayer.on('layeradd', function(e) {
 });
 
 // Add features to the map
-myLayer.setGeoJSON(geoJson);
+layer.setGeoJSON(result);
 </script>
 </body>
 </html>
