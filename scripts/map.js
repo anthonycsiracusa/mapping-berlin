@@ -13,7 +13,6 @@ layer.addTo(map);
 // Add custom popup html to each marker
 layer.on('ready', function(e) {
 	var marker = e.layer;
-	var feature = marker.feature;
 	var images = feature.properties.images;
 	var slideshowContent = '';
 
