@@ -4,26 +4,29 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoiYW50aG9ueWNzaXJhY3VzYSIsImEiOiJjaWdudWVocG4wMGJpbmtrb2ZkZDNpczF1In0.m3FSJwiHgwy1pfcsP2Orbw';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map').setView([35.1306, -90.1696], 10);
+var map = L.mapbox.map('map', "anthonycsiracusa.p31dhnah").setView([35.1306, -90.1696], 10);
 
-var layer_id = "anthonycsiracusa.p31dhnah";
-var layer = L.mapbox.tileLayer(layer_id);
-layer.addTo(map);
+var layer = L.mapbox.featureLayer().addTo(map)
 
 // Add custom popup html to each marker
-layer.on('ready', function(e) {
+layer.on('layeradd', function(e) {
 	var marker = e.layer;
+	var feature = marker.feature;
 	var images = feature.properties.images;
 	var slideshowContent = '';
 
-	for (var i = 0; i < images.length; i++) {
-		var img = images[i];
+	if (typeof images !== "undefined") {
+		for (var i = 0; i < images.length; i++) {
+			var img = images[i];
 
-		slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
-			img[0] +
-			'<div class="caption">' + img[1] + '</div>' +
-			'</div>';
+			slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') +
+				'">' +
+				img[0] +
+				'<div class="caption">' + img[1] + '</div>' +
+				'</div>';
+		}
 	}
+
 
 	// Create custom popup content
 	var popupContent = '<div id="' + feature.properties.id + '" class="popup">' +
