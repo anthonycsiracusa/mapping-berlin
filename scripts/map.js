@@ -78,7 +78,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/lynchings_view/',
+	$.getJSON('https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/lynchings/',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
