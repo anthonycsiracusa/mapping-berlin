@@ -78,7 +78,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/Shelby Lynchings, 1866-1945/',
+	$.getJSON('https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/lynchings/',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
@@ -105,7 +105,7 @@ $(function() {
 
 function getLayer(callback, cloudantView) {
 	var cloudantURLbase =
-		"https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/_design/Shelby Lynchings, 1866-1945/";
+		"https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/_design/lynchings/";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
