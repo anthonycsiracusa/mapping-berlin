@@ -105,7 +105,7 @@ $(function() {
 
 function getLayer(callback, cloudantView) {
 	var cloudantURLbase =
-		"https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first_design/lynchings_view/";
+		"https://9ff91535-f8f4-4df9-87e0-0e72f30152c8-bluemix.cloudant.com/first/_design/lynchings_view/";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
